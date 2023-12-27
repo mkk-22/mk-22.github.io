@@ -1,0 +1,112 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: monospace;
+    background-color: #4F5E76;
+    display: flex;
+    height: 100vh;
+}
+
+#container {
+    display: flex;
+    flex: 1;
+}
+
+#left {
+    flex: 2;
+    display: flex;
+    flex-direction: row;
+    background-color: #D5D5C6;
+    color: #DA653F;
+}
+
+#leftL, #leftR {
+    flex: 1;
+    display: flex;
+    align-items: center;
+}
+
+#leftL {
+    padding: 20px;
+    justify-content: flex-start; /* Align to the top */
+}
+
+#leftR {
+    padding: 20px;
+    justify-content: flex-end; /* Align to the bottom */
+}
+
+#leftTitle {
+    font-size: 60px;
+    font-weight: bold;
+    font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    margin-bottom: 20px;
+}
+
+#navLinks {
+    text-align: right;
+    
+}
+
+.navLink:hover {
+    font-size: 15px;
+}
+
+.navLink {
+    display: block;
+    margin-bottom: 10px;
+    cursor: pointer;
+    margin: 40px 0px 40px 0px;
+}
+
+#right {
+    flex: 3;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+    color: #D5D5C6;
+}
+
+#bio, #skills, #contact {
+    display: none;
+}
+
+#bio, #contact {
+    text-align: center;
+}
+
+label {
+    display: block;
+    margin-bottom: 2px;
+    text-align: left;
+}
+  
+input[type="text"], input[type="email"], textarea {
+    width: 300px;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+  
+input[type="submit"] {
+    background-color: #DA653F;
+    color: #D5D5C6;
+    padding: 10px 20px;
+    border:#DA653F;
+    border-radius: 4px;
+    cursor: pointer;
+}
+  
+input[type="submit"]:hover {
+    background-color: #e4a793;
+}
+
+#icons a {
+    padding: 20px;
+}
+
+#bio.show, #skills.show, #contact.show {
+    display: block;
+}

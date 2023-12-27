@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <title>Moram M Khalid</title>
+</head>
+
+<body>
+    <div id="container">
+        <div id="left">
+            <div id="leftL">
+                <div id="leftTitle">
+                    Moram 
+                    <br>
+                    M 
+                    <br>
+                    Khalid
+                </div>
+            </div>
+            <div id="leftR">
+                <div id="navLinks">
+                    <div class="navLink" onclick="showContent('bio')">Bio ></div>
+                    <div class="navLink" onclick="showContent('skills')">Skills ></div>
+                    <div class="navLink" onclick="showContent('contact')">Contact Me ></div>
+                </div>
+            </div>
+        </div>
+        <div id="right">
+            <div id="bio" class="show" style="padding: 100px;">
+                <h3 style="color:#DA653F;">About Me:</h1>
+                <p>
+                    A CS student with a passion for the peculiar, 
+                    I enjoy bringing back forgotten languages back to life through my studies and content creation,
+                    while exploring different algorithms and abstract mathematical concepts. 
+                </p>
+                <p>
+                    When I'm not excavating computing relics,
+                    you can find me binge-watching shows or drawing fanart of my favorite characters on my art page. 
+                </p>
+
+            </div>
+            <div id="skills">
+                <div id="desc">
+                    <h3 style="color:#DA653F;">Skills:</h1>
+                    <ul>
+                        <li>Languages: Python, Java, Haskell, C,  OCaml, HTML/CSS and Javascript, SQL, PHP and R</li>
+                        <li>Frameworks: Express and NumPy</li>
+                        <li>Version control: Git and GitHub </li>
+                        <li>Developement tools: Visual Studio Code, Eclipse and Bash </li>
+                        <li>Effective at TDD (with JUnit) and designing RESTful APIs</li>
+                    </ul>
+                </div>
+                <br>
+                <a href="resume.pdf" download="resume.pdf" style="color: #D5D5C6;">Download my resume</a>
+                <br>
+                <br>
+                <a href="https://github.com/mkk-22" style="color: #D5D5C6;">Check out my GitHub repositories</a>
+            </div>
+            <div id="contact">
+                <h3 style="color:#DA653F;">Send me a message...</h3>
+                <form action="https://formspree.io/f/xoqobnay" method="POST">
+                    <label for="name">Name:</label>
+                    <input type="text" id="name" name="name" required>
+                    <br>
+
+                    <label for="email">Email:</label>
+                    <input type="email" id="email" name="email" required>
+                    <br>
+
+                    <label for="message">Message:</label>
+                    <textarea id="message" name="message" rows="4" required></textarea>
+                    <br>
+
+                    <input type="submit" value="Submit">
+                </form>
+                <br>
+                <br>
+                <br>
+                <br>
+                <h3 style="color:#DA653F;">...or check out my socials</h3>
+                <div id="icons">
+                    <a href="https://www.youtube.com/@syntax_archive"><img src="/Profile/images/youtube.png" alt="Youtube" style="width:auto; height: 40px;"></a>
+                    <a href="https://www.linkedin.com/in/moram-k-872943255/"><img src="/Profile/images/linkedin.png" alt="LinkedIn" style="width:auto; height: 40px;"></a>
+                    <a href="/Profile/Blogs/frontpage.html"><img src="/Profile/images/blog.png" alt="Blog" style="width:auto; height: 35px;"></a>
+                </div>
+                
+            </div>
+        </div>
+    </div>
+
+    <script>
+        function showContent(contentId) {
+            document.getElementById('bio').classList.remove('show');
+            document.getElementById('skills').classList.remove('show');
+            document.getElementById('contact').classList.remove('show');
+
+            document.getElementById(contentId).classList.add('show');
+        }
+    </script>
+</body>
+</html>
